@@ -5,10 +5,6 @@ module.exports = {
 findMissing: function(arr1, arr2){
 var array1Length = arr1.length;
 var array2Length = arr2.length;
-var arr1 = arr1.sort();
-var arr2 = arr2.sort();
-console.log(arr1); 
-console.log(arr2); 
 var missingNumber = 0;
 var numberPresent = function (y, arr) {
 	for (var z=0; z<arr.length; z++){
