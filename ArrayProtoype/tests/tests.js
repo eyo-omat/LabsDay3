@@ -2,6 +2,9 @@
 
 var jasmine = require('jasmine');
 var myApp = require('../app/library.js');
+var oneToTwenty = new myApp.oneToTwenty;
+var twoToForty = new myApp.twoToForty;
+var tenToOneThousand = new myApp.tenToOneThousand;
 
 (function() { 
   describe('Binary Search to traverse an ordered list, effectively', function() {
