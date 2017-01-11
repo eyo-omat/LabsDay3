@@ -1,6 +1,8 @@
 'use strict';
 
 var jasmine = require('jasmine');
+var myApp = require('../app/library.js');
+var search = require('../app/library.js');
 var oneToTwenty = require('../app/library.js');
 var twoToForty = require('../app/library.js');
 var tenToOneThousand = require('../app/library.js');
@@ -108,3 +110,7 @@ var tenToOneThousand = require('../app/library.js');
   });
 });
 })();
+
+var oneToTwenty = [].toTwenty();
+var twoToForty = [].toForty();
+var tenToOneThousand = [].toOneThousand();

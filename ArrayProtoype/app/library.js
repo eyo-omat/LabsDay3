@@ -28,7 +28,8 @@ this.index = 0;
     var currentElement;
 
     while (minIndex <= maxIndex) {
-        currentIndex = (minIndex + maxIndex) / 2 | 0;
+        currentIndex = Math.floor((minIndex + maxIndex) / 2);
+        console.log(currentIndex);
         currentElement = this[currentIndex];
 
         if (currentElement < searchElement) {
@@ -55,11 +56,5 @@ Array.prototype.toOneThousand = function () {
 	    i+=10;
 	}
 	return this;
-};
-
-var oneToTwenty = [].toTwenty();
-var twoToForty = [].toForty();
-var tenToOneThousand = [].toOneThousand();
-
-
+};		
 
