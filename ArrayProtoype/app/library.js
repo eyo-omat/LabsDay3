@@ -1,9 +1,5 @@
 'use strict'
 
-Array.prototype.indexOf = function () {
-  throw new Error('You are not allowed to use the indexOf function');
-};
-
 Array.prototype.toTwenty = function () {
   	var twentyArray = [];
 
@@ -15,37 +11,61 @@ console.log(twentyArray);
 
 Array.prototype.toForty = function () {
   	var fortyArray = [];
-
-	for(var i = 2; i <= 20; i+2){
-	    fourtyArray.push(i);
+  	var i = 2;
+	while( i <= 40){
+	    fortyArray.push(i);
+	    i+=2;
 	}
-console.log(fourtyArray);
+console.log(fortyArray);
 };
 
-Array.prototype.search = function () {
-  throw new Error('You are not allowed to use the indexOf function');
+Array.prototype.search = function (searchElement) {
+this.count = 0;
+this.index = 0;
+
+	var minIndex = 0;
+    var maxIndex = this.length - 1;
+    var currentIndex;
+    var currentElement;
+
+    while (minIndex <= maxIndex) {
+        currentIndex = (minIndex + maxIndex) / 2 | 0;
+        currentElement = this[currentIndex];
+
+        if (currentElement < searchElement) {
+            minIndex = currentIndex + 1;
+        }
+        else if (currentElement > searchElement) {
+            maxIndex = currentIndex - 1;
+        }
+        else {
+            this.index = currentIndex;
+        }
+	this.count++
+    }
+
+    this.index = -1;
+return this;
 };
 
 Array.prototype.toOneThousand = function () {
-  var thoysandArray = [];
-
-	for(var i = 10; i <= 1000; i+10){
+  var thousandArray = [];
+	var i = 10;
+	while( i <= 1000){
 	    thousandArray.push(i);
+	    i+=10;
 	}
 console.log(thousandArray);
 };
+//Array.prototype.indexOf = function () {
+ // throw new Error('You are not allowed to use the indexOf function');
+///};
 
 var oneToTwenty = [].toTwenty();
 var twoToForty = [].toForty();
 var tenToOneThousand = [].toOneThousand();
-var search = function(x) {
 
-}
+//module.exports = oneToTwenty;
 
 
-module.exports = {
-	oneToTwenty : oneToTwenty,
-	twoToForty : twoToForty,
-	tenToOneThousand : tenToOneThousand,
-	search : search
-}
+
