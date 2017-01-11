@@ -1,0 +1,53 @@
+/**/
+
+.color-actual{
+	color: #3d92b9;
+	color: rgb(61, 146, 185);
+	color: hsl(199, 67%, 48%);
+ }
+ 
+/*Tint*/
+.color-tint-1 {color: rgb(61, 146, 185); color: #3d92b9;}
+.color-tint-2 {color: rgb(85, 160, 194); color: #55a0c2;}
+.color-tint-3 {color: rgb(110, 173, 203); color: #6eadcb;}
+.color-tint-4 {color: rgb(134, 187, 211); color: #86bbd3;}
+.color-tint-5 {color: rgb(158, 201, 220); color: #9ec9dc;}
+.color-tint-6 {color: rgb(182, 214, 229); color: #b6d6e5;}
+.color-tint-7 {color: rgb(207, 228, 237); color: #cfe4ed;}
+.color-tint-8 {color: rgb(231, 241, 246); color: #e7f1f6;}
+
+/*Shades*/
+.color-shades-1 {color: rgb(61, 146, 185); color: #3d92b9;}
+.color-shades-2 {color: rgb(53, 128, 162); color: #3580a2;}
+.color-shades-3 {color: rgb(46, 110, 139); color: #2e6e8b;}
+.color-shades-4 {color: rgb(38, 91, 116); color: #265b74;}
+.color-shades-5 {color: rgb(30, 73, 92); color: #1e495c;}
+.color-shades-6 {color: rgb(23, 55, 69); color: #173745;}
+.color-shades-7 {color: rgb(15, 37, 46); color: #0f252e;}
+.color-shades-8 {color: rgb(8, 18, 23); color: #081217;}
+
+/*Neutral*/
+.color-neutral-1 {color: rgb(61, 146, 185); color: #3d92b9;}
+.color-neutral-2 {color: rgb(61, 115, 185); color: #3d73b9;}
+.color-neutral-3 {color: rgb(61, 84, 185); color: #3d54b9;}
+.color-neutral-4 {color: rgb(69, 61, 185); color: #453db9;}
+.color-neutral-5 {color: rgb(100, 61, 185); color: #643db9;}
+.color-neutral-6 {color: rgb(131, 61, 185); color: #833db9;}
+
+/*Analogous*/
+.color-analogous-1 {color: rgb(61, 146, 185); color: #3d92b9;}
+.color-analogous-2 {color: rgb(61, 84, 185); color: #3d54b9;}
+.color-analogous-3 {color: rgb(100, 61, 185); color: #643db9;}
+.color-analogous-4 {color: rgb(162, 61, 185); color: #a23db9;}
+.color-analogous-5 {color: rgb(185, 61, 146); color: #b93d92;}
+.color-analogous-6 {color: rgb(185, 61, 84); color: #b93d54;}
+
+/*Tetradic*/
+.color-tetradic-1 {color: rgb(61, 146, 185); color: #3d92b9;}
+.color-tetradic-2 {color: rgb(162, 61, 185); color: #a23db9;}
+.color-tetradic-3 {color: rgb(185, 100, 61); color: #b9643d;}
+.color-tetradic-4 {color: rgb(84, 185, 61); color: #54b93d;}
+
+/*Complementary*/
+.color-complementary-1 {color: rgb(61, 146, 185); color: #3d92b9;}
+.color-complementary-2 {color: rgb(185, 100, 61); color: #b9643d;}
