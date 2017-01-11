@@ -7,6 +7,7 @@ var array1Length = arr1.length;
 var array2Length = arr2.length;
 var numberPresent = function (y, arr) {
 	for (var z in arr){
+console.log("ZZ~"+z+":::YYY~"+y);
 		if (y === z) { 
 			return true; 
 		} 
@@ -14,8 +15,8 @@ var numberPresent = function (y, arr) {
 	}
 }
     if ((array1Length < 1) || (array2Length < 1)) { return 0; }
-    for (var x in arr1){
-    	if (!numberPresent(x, arr2)) {
+    for (var x in arr2){
+    	if (!numberPresent(x, arr1)) {
     		return x;
 		} else { 
 			return 0; 
