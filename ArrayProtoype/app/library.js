@@ -20,16 +20,14 @@ Array.prototype.toForty = function () {
 
 Array.prototype.search = function (searchElement) {
 this.count = 0;
-this.index = 0;
+this.index = -1;
 
 	var minIndex = 0;
     var maxIndex = this.length - 1;
     var currentIndex;
     var currentElement;
-
     while (minIndex <= maxIndex) {
         currentIndex = Math.floor((minIndex + maxIndex) / 2);
-        console.log(currentIndex);
         currentElement = this[currentIndex];
 
         if (currentElement < searchElement) {
@@ -40,11 +38,11 @@ this.index = 0;
         }
         else {
             this.index = currentIndex;
+            break;
         }
 	this.count++;
     }
 
-    this.index = -1;
 return this;
 };
 
