@@ -29,7 +29,14 @@ this.index = -1;
     while (minIndex <= maxIndex) {
         currentIndex = Math.floor((minIndex + maxIndex) / 2);
         currentElement = this[currentIndex];
-
+        if (this[minIndex]  === searchElement) {
+             this.index = minIndex;
+              break;
+         }
+         else if (this[maxIndex]  === searchElement){
+             this.index = maxIndex;
+              break;
+         }
         if (currentElement < searchElement) {
             minIndex = currentIndex + 1;
         }
