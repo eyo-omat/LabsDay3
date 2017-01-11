@@ -1,22 +1,21 @@
 'use strict'
 
 Array.prototype.toTwenty = function () {
-  	var twentyArray = [];
-
+  
 	for(var i = 1; i <= 20; i++){
-	    twentyArray.push(i);
+	    this.push(i);
 	}
-console.log(twentyArray);
+	return this;
 };
 
 Array.prototype.toForty = function () {
-  	var fortyArray = [];
+  	
   	var i = 2;
 	while( i <= 40){
-	    fortyArray.push(i);
+	    this.push(i);
 	    i+=2;
 	}
-console.log(fortyArray);
+	return this;
 };
 
 Array.prototype.search = function (searchElement) {
@@ -41,7 +40,7 @@ this.index = 0;
         else {
             this.index = currentIndex;
         }
-	this.count++
+	this.count++;
     }
 
     this.index = -1;
@@ -49,23 +48,18 @@ return this;
 };
 
 Array.prototype.toOneThousand = function () {
-  var thousandArray = [];
+  
 	var i = 10;
 	while( i <= 1000){
-	    thousandArray.push(i);
+	    this.push(i);
 	    i+=10;
 	}
-console.log(thousandArray);
+	return this;
 };
-//Array.prototype.indexOf = function () {
- // throw new Error('You are not allowed to use the indexOf function');
-///};
 
 var oneToTwenty = [].toTwenty();
 var twoToForty = [].toForty();
 var tenToOneThousand = [].toOneThousand();
-
-//module.exports = oneToTwenty;
 
 
 

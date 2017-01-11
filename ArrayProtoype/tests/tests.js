@@ -1,7 +1,9 @@
 'use strict';
 
-//var jasmine = require('jasmine');
-var myApp = require('../app/library.js');
+var jasmine = require('jasmine');
+var oneToTwenty = require('../app/library.js');
+var twoToForty = require('../app/library.js');
+var tenToOneThousand = require('../app/library.js');
 
 (function() { 
   describe('Binary Search to traverse an ordered list, effectively', function() {
@@ -11,8 +13,8 @@ var myApp = require('../app/library.js');
       expect(oneToTwenty[0]).toBe(1);
       expect(oneToTwenty[19]).toBe(20);
       expect(oneToTwenty.length).toBe(20);
-      for(var i = 0; i < myApp.oneToTwenty.length - 1;i++) {
-        expect(myApp.oneToTwenty[i + 1] - myApp.oneToTwenty[i]).toBe(1);
+      for(var i = 0; i < oneToTwenty.length - 1;i++) {
+        expect(oneToTwenty[i + 1] - oneToTwenty[i]).toBe(1);
       }
     });
 
