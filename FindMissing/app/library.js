@@ -27,7 +27,5 @@ var numberPresent = function (y, arr) {
 	}
 return missingNumber;
 
-
-
 }
 }
