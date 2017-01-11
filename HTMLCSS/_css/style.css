@@ -26,14 +26,7 @@ h2 {
 }
 
 h3 {
-    margin: 1em 0 0.5em 0;
-	font-weight: 600;
-	font-family: 'Titillium Web', sans-serif;
-	position: relative;  
-	font-size: 36px;
-	line-height: 40px;
-	padding: 15px 15px 15px 15%;
-	color: #355681;
+    color: #F90B6D; font-family: 'Open Sans', sans-serif; font-size: 34px; font-weight: 300; line-height: 40px; margin: 0 0 16px;
 }
 
 h4 {
@@ -51,7 +44,7 @@ p {
     
 }    
     
-    
+nav { color: #F90B6D; font-family: 'Open Sans', sans-serif; font-size: 24px; font-weight: 300; line-height: 32px; margin: 0 0 14px; }    
     
     
     
